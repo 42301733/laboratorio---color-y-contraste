@@ -1,5 +1,5 @@
 :root {
-  --primario: #9D00FF;
+  --primario: #9d00ff;
   --primario-claro: #d9eaf7;
   --texto: #1f2937;
   --fondo: #f7f9fc;
@@ -49,4 +49,35 @@ button:hover {
 button:focus-visible {
   outline: 3px solid #f59e0b;
   outline-offset: 3px;
+}
+/* Estilos base para las alertas de estado */
+.estado {
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.4rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.exito {
+  color: #166534;
+  background-color: #f0fdf4;
+  border-left: 5px solid #166534;
+}
+/*Poner una palomita antes del texto*/
+.exito::before {
+  content: "✓ ";
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.error {
+  color: #b42318;
+  background-color: #fef2f2;
+  border-left: 5px solid #b42318;
+}
+/*Antes del texto poner la tacha*/
+.error::before {
+  content: "✕ ";
+  font-weight: bold;
+  font-size: 1.1rem;
 }
